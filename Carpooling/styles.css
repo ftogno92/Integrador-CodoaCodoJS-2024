@@ -86,9 +86,4 @@ header{
     margin-top: .5em;
 }
 
-.contacto_items{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 
-}
