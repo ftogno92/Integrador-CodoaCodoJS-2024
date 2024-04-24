@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-size: 62,5%;
+}
+a{ 
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+/*Encabezado*/
+header{
+    background-color: rgb(241, 224, 148);
+
+}
+.encabezado{
+    height: 85px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px;
+    align-items: center;
+}
+.logo{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+.navbar{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+.navbar_item{
+    display: inline;
+    padding: 10px 15px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+/*Main*/
+.container{
+    height: 100%;
+    display: flex;
+    margin: 6em;
+    font-family: "Jost", sans-serif;   
+}
+.titles{
+    font-size: 2rem;
+    padding: 25px 20px 10px 20px;
+    text-transform: uppercase;
+}
+.main_content{
+    font-size: 1.5em;
+    margin-top: .5em;
+}
+.main_img img{
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.content{
+    margin-top: -2em ;
+    padding-left: 3em;
+}
+
+
+.content_item h4{
+    font-size: 1.7em;
+    margin-top: .5em;
+}
+
+.contacto_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
