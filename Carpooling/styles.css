@@ -121,9 +121,9 @@ body{
     font-family:sans-serif;
     color:#333;
   }
-  h1{
+  /* h1{
     margin:80px 0
-  }
+  } */
   .btn {
     background: #F1E094;
     border: #D3D3D3 solid 0px;
@@ -139,7 +139,7 @@ body{
     transition: color .1s ease;
   }
   .btn:hover {
-    background: #357ebd;
+    background: #b5a86e;
   }
   .btn.btn-big {
     font-size: 18px;
