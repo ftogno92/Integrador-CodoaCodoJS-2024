@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
     <title>Trasla Carpooling</title>
         <!--bootstrap-->
     <link
@@ -24,7 +25,7 @@
             <li class="navbar_item"><a href="">inicio</a></li>
             <li class="navbar_item"><a href="">pasajero</a></li>
             <li class="navbar_item"><a href="">conductor</a></li>
-            <li class="navbar_item"><a href="./contacto.html">contacto</a></li>
+            <li class="navbar_item"><a href="">contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -97,4 +98,22 @@
       </ul>
     </footer>
   </body>
+  <!-- Modal -->
+<div id="modale" class="modale" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Ingresa tus datos</h2>
+      <a onclick="closeModale()" href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <input type="text" name="u" placeholder="Usuario" size="20" /><br>
+      <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
+    <div class="modal-footer">
+  
+
+      <a href="#" class="btn" id="btn_ingresar">Login</a>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
 </html>
