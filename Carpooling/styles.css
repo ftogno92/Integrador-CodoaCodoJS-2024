@@ -52,8 +52,6 @@ header {
   font-style: normal;
 }
 
-.navbar_items {}
-
 .nav-item {
   padding: 10px 15px;
   font-style: bold;
@@ -62,14 +60,16 @@ header {
 
 /*Main*/
 .container {
-  height: 100%;
-  display: flex;
-  margin: 6em;
+  max-width: 100%;
+  height: auto;
   font-family: "Jost", sans-serif;
+  grid-template-columns: 1fr;
+  
 }
 
-.titles {
+.content_title {
   font-size: 2rem;
+  margin-top: 2em;
   padding: 25px 20px 10px 20px;
   text-transform: uppercase;
 }
@@ -85,6 +85,8 @@ header {
   -moz-border-radius: 10%;
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
+  width: 100%;
+  height: auto;
 }
 
 .content {

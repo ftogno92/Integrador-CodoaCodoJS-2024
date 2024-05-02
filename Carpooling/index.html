@@ -44,10 +44,10 @@
       
     </header>
     <!--Main-->
-    <main class="">
-      <section class="container">
+    <main class="grid container">
+      <section class="content">
         <div>
-          <h2 class="titles">CARPOOLING</h2>
+          <h2 class="content_title">CARPOOLING</h2>
           <p class="main_content">
             Unite a un viaje en auto compartido para moverte de manera
             económica, conocer gente y ayudar al medio ambiente.
@@ -64,15 +64,9 @@
         </picture>
       </section>
 
-      <section class="container">
-        <picture class="main_img">
-          <img
-            src="./IMG/Carpooling-beneficios.jpg"
-            alt="Carpooling-beneficios"
-          />
-        </picture>
-        <div class="content">
-          <h2 class="titles">Beneficios del Carpooling</h2>
+      <section class="content">
+        <div>
+          <h2 class="content_title">Beneficios del Carpooling</h2>
           <div class="content_item">
             <h4>Viaja más barato y más seguro</h4>
             <p>
@@ -97,6 +91,12 @@
               También se les recomienda subir información de su auto para mayor
               seguridad.
             </p>
+            <picture class="main_img">
+              <img
+                src="./IMG/Carpooling-beneficios.jpg"
+                alt="Carpooling-beneficios"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -110,29 +110,27 @@
         <li>github</li>
       </ul>
     </footer>
-
-  <!-- Modal -->
-  <div id="modale" class="modale" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <h2>Ingresa tus datos</h2>
-        <a onclick="closeModale()" href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
-      </div>
-      <div class="modal-body">
-        <input type="text" name="u" placeholder="Usuario" size="20" /><br>
-        <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
-      <div class="modal-footer">
-    
-  
-        <a href="#" class="btn" id="btn_ingresar">Login</a>
-      </div>
-    </div>
-  </div>
-      <!--Bootstrap JS-->
+    <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!--Trasla JS-->
     <script src="script.js"></script>
   </body>
+  <!-- Modal -->
+<div id="modale" class="modale" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Ingresa tus datos</h2>
+      <a onclick="closeModale()" href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+    </div>
+    <div class="modal-body">
+      <input type="text" name="u" placeholder="Usuario" size="20" /><br>
+      <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
+    <div class="modal-footer">
+  
 
+      <a href="#" class="btn" id="btn_ingresar">Login</a>
+    </div>
+  </div>
+</div>
 <!-- /Modal -->
 </html>
