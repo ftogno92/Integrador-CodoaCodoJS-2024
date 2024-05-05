@@ -248,3 +248,12 @@ body {
 .modal-header h2 {
   font-size: 20px;
 }
+
+/* Compu */
+@media (min-width: 1025px) { 
+  .content {
+    margin: 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
