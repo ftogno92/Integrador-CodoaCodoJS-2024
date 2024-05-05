@@ -1,11 +1,18 @@
 
-
-function iniciarSesion(){
-    htmlModal = document.getElementById("modale");
-    htmlModal.setAttribute("class", "modale opened");
+function copyToClipboard(elementId) {
+  var inputElement = document.getElementById(elementId);
+  inputElement.select();
+  inputElement.setSelectionRange(0, 99999); /* For mobile devices */
+  document.execCommand("copy");
+  // alert("Número de teléfono copiado al portapapeles: " + inputElement.value);
 }
 
-function closeModale(){
-    htmlModal = document.getElementById("modale");
-    htmlModal.setAttribute("class", "modale");
+function conductorRespuesta() {
+    // Redireccionar a la página deseada
+    window.location.href = './ofrezcoResultados.html';
+}
+
+function pasajeroRespuesta() {
+    // Redireccionar a la página deseada
+    window.location.href = './buscoResultados.html';
 }
