@@ -7,9 +7,19 @@
     <script src="script.js"></script>
     <title>Trasla Carpooling</title>
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Estilos CSS-->
     <link rel="stylesheet" href="./styles.css" />
-    <!--font awesome-->
+    <!--bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
@@ -20,41 +30,46 @@
     <!--Encabezado-->
     <header>
       <nav class="navbar navbar-expand-lg encabezado">
-        <div class="container-fluid flex navbar_items">
-          <a class="navbar-brand logo" href="#">Trasla Carpooling</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand logo" href="#">Trasla Carpooling</a>
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div class="collapse navbar-collapse navbar_items" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                <a class="nav-link active" aria-current="page" href="#"
+                  >INICIO</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONDUCTOR</a>
+                <a class="nav-link" href="./ofrezcoConsulta.html">CONDUCTOR</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PASAJERO</a>
+                <a class="nav-link" href="./buscoConsulta.html">PASAJERO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-outline-success" type=""onclick="iniciarSesion()" href="#" id="btnLogin">Iniciar Sesion</button>
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
               </li>
             </ul>
-
           </div>
         </div>
       </nav>
-      
     </header>
     <!--Main-->
     <main class="grid container">
-      <section class="content">
-        <div>
+      <section class="content grid">
+        <div class="main_content_1 grid">
           <h2 class="titles">CARPOOLING</h2>
-          <p class="main_content">
+          <p>
             Unite a un viaje en auto compartido para moverte de manera
             económica, conocer gente y ayudar al medio ambiente.
           </p>
@@ -70,9 +85,9 @@
         </picture>
       </section>
 
-      <section class="content">
-        <div>
-          <h2 class="content_title">Beneficios del Carpooling</h2>
+      <section class="content grid">
+        <div class="main_content_2 grid">
+          <h2 class="titles">Beneficios del Carpooling</h2>
           <div class="content_item">
             <h4>Viaja más barato y más seguro</h4>
             <p>
@@ -97,45 +112,57 @@
               También se les recomienda subir información de su auto para mayor
               seguridad.
             </p>
-            <picture class="main_img">
-              <img
-                src="./IMG/Carpooling-beneficios.jpg"
-                alt="Carpooling-beneficios"
-              />
-            </picture>
           </div>
         </div>
+        <picture class="main_img">
+          <img
+            src="./IMG/Carpooling-beneficios.jpg"
+            alt="Carpooling-beneficios"
+          />
+        </picture>
       </section>
     </main>
-    <footer class="footer">
-      <ul>
-        <li><a href=""></a></li>
-        <li>inta</li>
-        <li>x</li>
-        <li>github</li>
-      </ul>
+    <footer class="footer container ">
+      <div class="flex footer_content">
+        <div>
+          <a class="footer_logo" href="#">Trasla Carpooling</a>
+          <br>
+          <p>
+            Hecho con mucho amor y esfuerzo por los integrantes de Trasla
+            Carpooling.
+          </p>
+        </div>
+        <ul class="footer_item ">
+          <li class="footer_items">
+            <a href="#" class="footer_item_link"
+              ><i class="bi redes_icon bi-facebook"></i
+            ></a>
+          </li>
+          <li class="footer_items">
+            <a href="#" class="footer_item_link"
+              ><i class="bi redes_icon bi-instagram"></i
+            ></a>
+          </li>
+          <li class="footer_items">
+            <a href="#" class="footer_items_link"
+              ><i class="bi redes_icon bi-twitter-x"></i
+            ></a>
+          </li>
+          <li class="footer_items">
+            <a href="#" class="footer_items_link"
+              ><i class="bi redes_icon bi-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p>Proyecto integrador Codo a Codo FrontEnd - JavaScript comisión 24138. </p>
     </footer>
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!--Trasla JS-->
-    <script src="script.js"></script>
   </body>
-  <!-- Modal -->
-<div id="modale" class="modale" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <h2>Ingresa tus datos</h2>
-      <a onclick="closeModale()" href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
-    </div>
-    <div class="modal-body">
-      <input type="text" name="u" placeholder="Usuario" size="20" /><br>
-      <input type="text" name="p" placeholder="&bull;&bull;&bull;&bull;" size="20" /></div>
-    <div class="modal-footer">
-  
-
-      <a href="#" class="btn" id="btn_ingresar">Login</a>
-    </div>
-  </div>
-</div>
-<!-- /Modal -->
 </html>

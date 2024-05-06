@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 62, 5%;
+  font-size: 62,5%;
 }
 
 a {
@@ -64,17 +64,18 @@ header {
   height: auto;
   font-family: "Jost", sans-serif;
   grid-template-columns: 1fr;
-  
+  margin-top: 2em;
+
 }
 
 .content_title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 2em;
-  padding: 25px 20px 10px 20px;
   text-transform: uppercase;
 }
 
-.main_content {
+.main_content_1,
+.main_content_2 {
   font-size: 1.5em;
   margin-top: .5em;
 }
@@ -89,171 +90,114 @@ header {
   height: auto;
 }
 
-.content {
-  margin-top: -2em;
-  padding-left: 3em;
+.titles{
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 2em;
+  padding-top: 10px;
 }
-
-
 .content_item h4 {
   font-size: 1.7em;
   margin-top: .5em;
 }
 
+/*Footer*/
 
-#btnLogin {
-  font-size: 15px;
-  width: 140px;
-  height: 50px;
-  border-width: 1px;
-  color: rgba(71, 68, 53, 1);
-  border-color: rgba(211, 211, 211, 1);
-  font-weight: bold;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  box-shadow: 3px 4px 0px 0px #899599;
-  text-shadow: 0px 1px 0px rgba(241, 224, 148, 1);
-  background: linear-gradient(#ededed, #bab1ba);
+.footer {
+  background-color: rgb(241, 224, 148);
+  padding: 2em;
+  max-width: 100%;
+  height: auto;
+  margin-top: 2em;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#btnLogin:hover {
-  background: linear-gradient(#bab1ba, #ededed);
+.footer_logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4em;
+  justify-items: center;
 }
-
-
-
-
-
-
-
-
-
-body {
-  background: url(https://subtlepatterns.com/patterns/crossword.png);
-  font-family: sans-serif;
-  color: #333;
+.footer_content{
+  justify-content: space-between;
 }
-
-/* h1{
-    margin:80px 0
-  } */
-.btn {
-  background: #F1E094;
-  border: #D3D3D3 solid 0px;
-  border-radius: 3px;
-  color: #fff;
-  display: inline-block;
-  font-size: 14px;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-align: center;
-  min-width: 60px;
-  position: relative;
-  transition: color .1s ease;
-}
-
-.btn:hover {
-  background: #b5a86e;
-}
-
-.btn.btn-big {
-  font-size: 18px;
-  padding: 15px 20px;
-  min-width: 100px;
-}
-
-.btn-close {
-  color: #aaaaaa;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 10px;
-  position: absolute;
-  right: 7px;
-  top: 0;
-}
-
-.btn-close:hover {
-  color: #919191;
-}
-
-.modale:before {
-  content: "";
-  display: none;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-}
-
-.opened:before {
-  display: block;
-}
-
-.opened .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-  top: 20%;
-}
-
-.modal-dialog {
-  background: #fefefe;
-  border: #333333 solid 0px;
-  border-radius: 5px;
-  margin-left: -200px;
-  text-align: center;
-  position: fixed;
-  left: 50%;
-  top: -100%;
-  z-index: 11;
-  width: 360px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translate(0, -500%);
-  -ms-transform: translate(0, -500%);
-  transform: translate(0, -500%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-
-.modal-body {
-  padding: 20px;
-}
-
-.modal-body input {
-  width: 200px;
-  padding: 8px;
-  border: 1px solid #ddd;
-  color: #888;
-  outline: 0;
-  font-size: 14px;
-  font-weight: bold
-}
-
-.modal-header,
-.modal-footer {
-  padding: 10px 20px;
-}
-
-.modal-header {
-  border-bottom: #eeeeee solid 1px;
-}
-
-.modal-header h2 {
-  font-size: 20px;
-}
-
 /* Compu */
-@media (min-width: 1025px) { 
+@media (min-width: 1025px) {
+
+  /*Navbar*/
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar_items {
+    justify-content: end;
+  }
+
+  /*Main*/
   .content {
     margin: 2em;
     grid-template-columns: 1fr 1fr;
+  }
+
+  img {
+    width: 50%;
+    margin: 1em;
+  }
+
+  .main_content_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_content_1 h2 {
+    font-size: 50px;
+  }
+
+  .main_content_1 p {
+    font-size: 20px;
+  }
+
+  .content_items {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+  }
+
+  .main_img {
+    margin-top: 2em;
+  }
+
+  .content_item h4 {
+    font-size: 30px;
+  }
+
+  .content_item p {
+    font-size: 18px;
+  }
+
+  .main_content_2 h2 {
+    font-size: 35px;
+  }
+
+  /*Footer*/
+  .footer {
+    justify-content: space-between;
+  }
+  .footer_content{
+    justify-content: space-between;
+  }
+  .footer_item{
+    justify-content: end;
+  }
+  .footer_items {
+    display: inline;
+    margin: 1em;
+    justify-content: end;
+  }
+  .redes_icon{
+    font-size: 2em;
   }
 
 }
