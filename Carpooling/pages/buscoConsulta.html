@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="script.js"></script>
-    <title>Trasla Carpooling</title>
+    <title>Trasla Carpooling - Pasajero</title>
     <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     />
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <!--bootstrap icons-->
     <link
       rel="stylesheet"
@@ -30,7 +30,7 @@
     <!--Encabezado-->
     <header>
       <nav class="navbar navbar-expand-lg encabezado">
-        <a class="navbar-brand logo" href="./index.html">Trasla Carpooling</a>
+        <a class="navbar-brand logo" href="../index.html">Trasla Carpooling</a>
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -46,18 +46,18 @@
           <div class="collapse navbar-collapse navbar_items" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html"
+                <a class="nav-link active" aria-current="page" href="../index.html"
                   >INICIO</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/ofrezcoConsulta.html">CONDUCTOR</a>
+                <a class="nav-link" href="./ofrezcoConsulta.html">CONDUCTOR</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/buscoConsulta.html">PASAJERO</a>
+                <a class="nav-link" href="./buscoConsulta.html">PASAJERO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -65,66 +65,45 @@
       </nav>
     </header>
     <!--Main-->
-    <main class="grid container">
-      <section class="content grid">
-        <div class="main_content_1 grid">
-          <h2 class="titles">CARPOOLING</h2>
-          <p>
-            Unite a un viaje en auto compartido para moverte de manera
-            económica, conocer gente y ayudar al medio ambiente.
+    <main class="">
+      <section class="container">
+        <div>
+          <h2 class="titles">Busco Viaje</h2>
+          <p class="main_content">
+            Ingresa los datos del viaje que buscas para que puedas encontrar viajes diponibles!
           </p>
-          <p>Registrarte es muy sencillo, completando tu perfil o vinculando tu cuenta con los datos públicos de alguna red social en la que ya participes. 
-          </p>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre o apodo con el que te conocen" required>
+            </div>
+            <div class="mb-3">
+              <label for="origen" class="form-label">Origen</label>
+              <input type="text" class="form-control" id="origen" placeholder="Lugar desde donde inicia tu viaje" required>
+            </div>
+            <div class="mb-3">
+              <label for="destino" class="form-label">Destino</label>
+              <input type="text" class="form-control" id="destino" placeholder="Lugar en el que termina tu viaje" required>
+            </div>
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha</label>
+              <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="mb-3">
+              <label for="hora" class="form-label">Hora Estimada de Salida</label>
+              <input type="time" class="form-control" id="hora" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Número de contacto" required>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="pasajeroRespuesta()">Publicar busqueda</button>
+          </form>
         </div>
-
-        <picture class="main_img">
-          <img
-            src="./IMG/image.jpg"
-            alt="imagen carpooling"
-            width="600px"
-            height="350px"
-          />
-        </picture>
-      </section>
-
-      <section class="content grid">
-        <div class="main_content_2 grid">
-          <h2 class="titles">Beneficios del Carpooling</h2>
-          <div class="content_item">
-            <h4 class="content_item_title">Viaja más barato y más seguro</h4>
-            <p>
-              Seleccioná el conductor de tu viaje y además podés ver quiénes
-              serán tus compañeros de carpooling para organizar tu viaje con
-              mayor seguridad.
-              
-            </p>
-          </div>
-          <div class="content_item">
-            <h4>Consulta antes de viajar</h4>
-            <p>
-              Podés preguntar al conductor tus dudas sobre el viaje antes de
-              sumarte. Después de reservar, podrás comunicarte con él a través
-              de un chat privado dentro de la aplicación.
-            </p>
-          </div>
-          <div class="content_item">
-            <h4>Conductores verificados</h4>
-            <p>
-              Todos los conductores son aprobados por nuestros especialistas. Es
-              obligatorio que cuenten DNI y Licencia de Conducir habilitada.
-              También se les recomienda subir información de su auto para mayor
-              seguridad.
-            </p>
-          </div>
-        </div>
-        <picture class="main_img">
-          <img
-            src="./IMG/Carpooling-beneficios.jpg"
-            alt="Carpooling-beneficios"
-          />
-        </picture>
       </section>
     </main>
+    <br>
+    <br>
     <footer class="footer flex ">
       <div class="flex footer_content">
         <div class="">
@@ -167,6 +146,6 @@
       crossorigin="anonymous"
     ></script>
     <!--Trasla JS-->
-    <script src="./script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>
