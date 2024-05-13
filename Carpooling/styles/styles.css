@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-size: 62,5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/*Encabezado*/
+header {
+  background-color: rgb(241, 224, 148);
+
+}
+
+.encabezado {
+  max-width: 100%;
+  height: auto;
+  margin: 0px 20px;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.navbar-nav {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav-item {
+  padding: 10px 15px;
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+/*Main*/
+.container {
+  max-width: 100%;
+  height: auto;
+  font-family: "Jost", sans-serif;
+  grid-template-columns: 1fr;
+  margin-top: 2em;
+
+}
+
+.main_content_1,
+.main_content_2 {
+  font-size: 1.5em;
+  margin-top: .5em;
+}
+.main_content_2{
+  margin-top: 2.5em;
+}
+
+.main_img img {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  width: 100%;
+  height: auto;
+}
+
+.titles{
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+}
+.content_item h4 {
+  margin-top: 1em;
+}
+.content_item p{
+  font-size: medium;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: rgb(241, 224, 148);
+  padding: 2em;
+  max-width: 100%;
+  height: auto;
+  margin-top: 2em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer_logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4em;
+  justify-items: center;
+}
+.footer_content{
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer_item{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 2em;
+}
+
+/* Compu */
+@media (min-width: 1025px) {
+
+  /*Navbar*/
+  .navbar_items {
+    display: flex;
+  }
+  .navbar_items ul{
+    margin-left: 30rem;
+    
+  }
+
+  /*Main*/
+  .content {
+    margin: 1em;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+  }
+
+  img {
+    width: 50%;
+    margin: 1em;
+  }
+
+  .main_content_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_content_1 h2 {
+    font-size: 50px;
+  }
+
+  .main_content_1 p {
+    font-size: 20px;
+  }
+
+  .content_items {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+  }
+
+  .main_img {
+    margin-top: 2em;
+  }
+
+  .content_item h4 {
+    font-size: 30px;
+  }
+
+  .content_item p {
+    font-size: 18px;
+  }
+
+  .main_content_2 h2 {
+    font-size: 35px;
+  }
+
+  /*Footer*/
+  .footer {
+    justify-content: space-around;
+  }
+  .footer_logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 3em;
+    
+  }
+  .footer_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .footer_item{
+    font-size: 73%;
+    flex-direction: initial;
+    justify-content: end;
+    align-items: end;
+    gap: 15px;
+  }
+  .footer_items {
+    display: inline;
+    margin: 1em;
+    justify-content: end;
+  }
+  .redes_icon{
+    font-size: 2em;
+    
+  }
+  /*Contacto*/
+
+
+}
+
+
+/* FORMULARIOS */
+/*Mobile*/
+.input{
+  width: 80% ;
+  margin-right: 5px;
+}
+
