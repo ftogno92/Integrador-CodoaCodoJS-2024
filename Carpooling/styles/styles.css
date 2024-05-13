@@ -232,3 +232,10 @@ header {
   margin-right: 5px;
 }
 
+.form_content{
+  margin: 0 auto;
+  max-width: 50%;
+}
+.btn{
+  color: rgb(92, 91, 91);
+}

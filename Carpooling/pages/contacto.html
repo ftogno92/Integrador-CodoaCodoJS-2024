@@ -43,10 +43,16 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse navbar_items" id="navbarTogglerDemo03">
+          <div
+            class="collapse navbar-collapse navbar_items"
+            id="navbarTogglerDemo03"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
                   >INICIO</a
                 >
               </li>
@@ -65,48 +71,63 @@
       </nav>
     </header>
     <!--Contacto-->
-    <section class="container">
-      <form action="get">
-        <fieldset>
-          <legend class="titles"><h4>Contacto</h4></legend>
-          <div class="datos grid">
-            <label for="name">Nombre: </label
-              ><input type="text" id="name" name="name" placeholder="Nombre" />
-              <label for="lastname">Apellido: </label>
+    <main class="container">
+      <h4 class="titles">Contacto</h4>
+      <div class="form__content">
+        <form action="">
+          <div class="form_content ">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
               <input
                 type="text"
-                name="lastname"
-                id="lastname"
-                placeholder="Apellido"
+                class="form-control"
+                id="nombre"
+                placeholder="Nombre..."
+                required
               />
-              <br />
-              <label for="email">Email: </label>
+            </div>
+            <br />
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
               <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="email@correo.com"
+                type="text"
+                class="form-control"
+                id="apellido"
+                placeholder="Apellido..."
+                required
               />
-              <label for="phone">Número de celular: </label>
-              <input type="tel" id="phone" name="phone" placeholder="+5496123564" />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input
+                type="phone"
+                class="form-control"
+                id="telefono"
+                placeholder="Número de contacto..."
+                required
+              />
+            </div>
+            <label for="comentario" class="form-label">Comentario</label>
+            <textarea id="contacto" class="form-control" name="contacto" rows="4" cols="50"></textarea>
           </div>
-          <br />
-          <label for="contacto">Comentario: </label>
-          <textarea id="contacto" name="contacto" rows="4" cols="50"></textarea>
-        </fieldset>
-      </form>
-    </section>
-    <footer class="footer container">
+        </form>
+      </div>
+    </main>
+    <footer class="footer flex">
       <div class="flex footer_content">
-        <div>
+        <div class="">
           <a class="footer_logo" href="#">Trasla Carpooling</a>
           <br />
           <p>
             Hecho con mucho amor y esfuerzo por los integrantes de Trasla
             Carpooling.
           </p>
+          <p>
+            Proyecto integrador Codo a Codo FrontEnd - JavaScript comisión
+            24138.
+          </p>
         </div>
-        <ul class="footer_item">
+        <ul class="footer_item flex">
           <li class="footer_items">
             <a href="#" class="footer_item_link"
               ><i class="bi redes_icon bi-facebook"></i
@@ -129,9 +150,6 @@
           </li>
         </ul>
       </div>
-      <p>
-        Proyecto integrador Codo a Codo FrontEnd - JavaScript comisión 24138.
-      </p>
     </footer>
     <!--Bootstrap JS-->
     <script
@@ -140,6 +158,6 @@
       crossorigin="anonymous"
     ></script>
     <!--Trasla JS-->
-    <script src="./script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>
