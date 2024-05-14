@@ -219,7 +219,6 @@ header {
     font-size: 2em;
     
   }
-  /*Contacto*/
 
 
 }
@@ -238,4 +237,5 @@ header {
 }
 .btn{
   color: rgb(92, 91, 91);
+  margin-top: 10px;
 }
