@@ -257,6 +257,6 @@ header {
 }
 
 .menuTrans:hover{
-  background-color: rgb(224, 206, 125); !important;
+  background-color: rgb(224, 206, 125) !important;
   border-radius: 30% 10%;
 }
