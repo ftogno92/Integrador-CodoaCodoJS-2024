@@ -251,3 +251,12 @@ header {
   /* color: #f7d547 !important; */
   background-color: #f7d547 !important;
 }
+
+.menuTrans{
+  transition: all 1s;
+}
+
+.menuTrans:hover{
+  background-color: rgb(224, 206, 125); !important;
+  border-radius: 30% 10%;
+}
