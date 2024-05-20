@@ -238,4 +238,25 @@ header {
 .btn{
   color: rgb(92, 91, 91);
   margin-top: 10px;
+  transition: all 1.5s;
+}
+
+.btn:hover{
+  width: 135px;
+  height: 45px;
+  /* border-style: groove; */
+  /* border-style: inset; */
+  border-color: black;
+  border-width: 1.5px;
+  /* color: #f7d547 !important; */
+  background-color: #f7d547 !important;
+}
+
+.menuTrans{
+  transition: all 1s;
+}
+
+.menuTrans:hover{
+  background-color: rgb(224, 206, 125) !important;
+  border-radius: 30% 10%;
 }
