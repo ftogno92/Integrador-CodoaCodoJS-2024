@@ -20,11 +20,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-      crossorigin="anonymous"
-    />
+    <!--AOS animate-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!--Encabezado-->
@@ -43,18 +40,28 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse navbar_items" id="navbarTogglerDemo03">
+          <div
+            class="collapse navbar-collapse navbar_items"
+            id="navbarTogglerDemo03"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
                   >INICIO</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/ofrezcoConsulta.html">CONDUCTOR</a>
+                <a class="nav-link" href="./pages/ofrezcoConsulta.html"
+                  >CONDUCTOR</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/buscoConsulta.html">PASAJERO</a>
+                <a class="nav-link" href="./pages/buscoConsulta.html"
+                  >PASAJERO</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
@@ -73,7 +80,10 @@
             Unite a un viaje en auto compartido para moverte de manera
             económica, conocer gente y ayudar al medio ambiente.
           </p>
-          <p>Registrarte es muy sencillo, completando tu perfil o vinculando tu cuenta con los datos públicos de alguna red social en la que ya participes. 
+          <p>
+            Registrarte es muy sencillo, completando tu perfil o vinculando tu
+            cuenta con los datos públicos de alguna red social en la que ya
+            participes.
           </p>
         </div>
 
@@ -83,6 +93,8 @@
             alt="imagen carpooling"
             width="600px"
             height="350px"
+            data-aos="fade-down-left"
+          
           />
         </picture>
       </section>
@@ -96,7 +108,6 @@
               Seleccioná el conductor de tu viaje y además podés ver quiénes
               serán tus compañeros de carpooling para organizar tu viaje con
               mayor seguridad.
-              
             </p>
           </div>
           <div class="content_item">
@@ -121,20 +132,24 @@
           <img
             src="./IMG/Carpooling-beneficios.jpg"
             alt="Carpooling-beneficios"
+            data-aos="fade-down-left"
           />
         </picture>
       </section>
     </main>
-    <footer class="footer flex ">
+    <footer class="footer flex">
       <div class="flex footer_content">
         <div class="">
           <a class="footer_logo" href="#">Trasla Carpooling</a>
-          <br>
+          <br />
           <p>
             Hecho con mucho amor y esfuerzo por los integrantes de Trasla
             Carpooling.
           </p>
-          <p>Proyecto integrador Codo a Codo FrontEnd - JavaScript comisión 24138. </p>
+          <p>
+            Proyecto integrador Codo a Codo FrontEnd - JavaScript comisión
+            24138.
+          </p>
         </div>
         <ul class="footer_item flex">
           <li class="footer_items">
@@ -147,7 +162,7 @@
               ><i class="bi redes_icon bi-instagram"></i
             ></a>
           </li>
-          <li class="footer_items ">
+          <li class="footer_items">
             <a href="#" class="footer_items_link"
               ><i class="bi redes_icon bi-twitter-x"></i
             ></a>
@@ -168,5 +183,10 @@
     ></script>
     <!--Trasla JS-->
     <script src="./script/script.js"></script>
+    <!--AOS animate JS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
