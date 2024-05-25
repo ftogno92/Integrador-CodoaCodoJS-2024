@@ -242,8 +242,8 @@ header {
 }
 
 .btn:hover{
-  width: 135px;
-  height: 45px;
+  width: 150px;
+  height: 60px;
   /* border-style: groove; */
   /* border-style: inset; */
   border-color: black;
