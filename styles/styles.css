@@ -78,11 +78,11 @@ header {
 }
 
 .main_img img {
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   width: 100%;
   height: auto;
 }
@@ -135,10 +135,6 @@ header {
   /*Navbar*/
   .navbar_items {
     display: flex;
-  }
-  .navbar_items ul{
-    margin-left: 30rem;
-    
   }
 
   /*Main*/
@@ -227,7 +223,7 @@ header {
 /* FORMULARIOS */
 /*Mobile*/
 .input{
-  width: 80% ;
+  width: 50% ;
   margin-right: 5px;
 }
 
@@ -235,22 +231,43 @@ header {
   margin: 0 auto;
   max-width: 50%;
 }
-.btn{
+.btn-consulta,
+.btn-contacto{
   color: rgb(92, 91, 91);
   margin-top: 10px;
   transition: all 1.5s;
 }
-
+.btn-consulta:hover,
+.btn-contacto:hover{
+  display: inline;
+  width: 120px;
+  height: 60px;
+  border-color: black;
+  border-width: 1.5px;
+  background-color: rgb(241, 224, 148)!important;
+  
+}
+.table{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.btn-copy {
+  width: 10%;
+  margin-right: 20px;
+}
+.btn-copy-group{
+  margin: 0 auto;
+}
+/*
 .btn:hover{
   width: 150px;
   height: 60px;
-  /* border-style: groove; */
-  /* border-style: inset; */
+  border-style: groove;
+  border-style: inset; 
   border-color: black;
   border-width: 1.5px;
-  /* color: #f7d547 !important; */
   background-color: rgb(241, 224, 148)!important;
-}
+}*/
 
 .menuTrans{
   transition: all 1s;
